@@ -175,6 +175,14 @@ Variamos a modo de exploración un poco aleatoria el **optimizador** y la **taza
 
 <img src='https://drive.google.com/uc?id=1bolsDZxKgA_6xPsJUaLp6vp6oznr6Ts0' name='TestMetricas'>
 
+## Conclusión general:
+
+* Se logró obtener un buen valor, con el set de test, para la métrica `balanced_accuracy`: **0.8**
+* Comparando con el valor obtenido para la misma métrica con el modelo del Perceptrón Multicapa (**0.81**), el nuevo valor es menor pero no por mucho.
+* Como próximos pasos, luego de haber obtenido un *base line* satisfactorio para ambos tipos de redes neuronales, la idea sería ver si los resultados obtenidos para `balanced_accuracy` pueden incrementarse sumando otras técnicas para optimizar los modelos como:  
+  * modificar los *pesos de regularización*,  
+  * o aplicar *dropouts*. 
+
 ## Contenido:
 
 * TP_AprendizajeProfundo.ipynb: Jupyter Notebook con el trabajo resuelto.
@@ -207,4 +215,3 @@ Para ver MLFlow
 Cerrar el jupyter y correr:
 
 $ `mlflow ui --port {PORT}`
-
